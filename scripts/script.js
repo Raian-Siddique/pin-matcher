@@ -8,9 +8,7 @@ document.getElementById("try-left").style.display = "none";
 //creating a pin generator
 
 function numberGenerator() {
-  document.getElementById("generated-pin").value = Math.floor(
-    Math.random() * 9000 + 999
-  );
+  document.getElementById("generated-pin").value = 999 + Math.floor(Math.random() * 9000);
 }
 // step-3
 // number pad activation
