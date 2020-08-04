@@ -55,16 +55,6 @@ function clearAll() {
   document.getElementById("pin-input").value = "";
 }
 
-// function popup(id) {
-//     let id = document.getElementById(id);
-//     id.style.display = 'block';
-// }
-
-// function hidePopup() {
-//     let id = document.getElementById(id);
-//     id.style.display = 'none';
-// }
-
 let count = 0;
 
 function tryLeft() {
