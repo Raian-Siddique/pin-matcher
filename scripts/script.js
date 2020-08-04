@@ -1,18 +1,11 @@
-/*Assignment-4 
-
-step 1: hide the bottom message please try again
-step-2: generate a 4 digit pin using math.random
-step-3: type that number in num pad
-step-4: match the generate num with the input num , if match the show the message pin matched otherwise the pin didn't match .
-step-5: bonus marks: activate total clear [C] button and  backspace[<] button.
-*/
-
 // step-1
+//hiding the bottom message
 document.getElementById("pin-right").style.display = "none";
 document.getElementById("pin-wrong").style.display = "none";
 document.getElementById("try-left").style.display = "none";
 
 // step-2
+//creating a pin generator
 
 function numberGenerator() {
   document.getElementById("generated-pin").value = Math.floor(
@@ -20,13 +13,13 @@ function numberGenerator() {
   );
 }
 // step-3
-// button generator activation
+// number pad activation
 function numberButton(num) {
   document.getElementById("pin-input").value =
     document.getElementById("pin-input").value + num;
 }
-
 // step-4
+// matching the input pin with the generated pin
 function submitButton() {
   let inputPin = document.getElementById("pin-input").value;
   let generatedPin = document.getElementById("generated-pin").value;
@@ -41,8 +34,8 @@ function submitButton() {
     tryLeft();
   }
 }
-
 // step-5
+//activating backspace and clear button
 function backspace() {
   let inputValue = document.getElementById("pin-input").value;
   document.getElementById("pin-input").value = inputValue.substring(
@@ -54,7 +47,6 @@ function backspace() {
 function clearAll() {
   document.getElementById("pin-input").value = "";
 }
-
 let count = 0;
 
 function tryLeft() {
